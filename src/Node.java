@@ -1,4 +1,3 @@
-package libraries;
 public class Node<T> {
 
     private T data;

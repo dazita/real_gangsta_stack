@@ -260,7 +260,7 @@ public class SimpleList<T> implements List<T> {
 
     @Override
     public void add(int index, T element) {
-        if (index < 0 || index >= this.size()) {
+        if (index < 0 || index > this.size()) {
             throw new IndexOutOfBoundsException("Índice fuera de rango: " + index);
         }
         Node<T> newNode = new Node<T>(element);
